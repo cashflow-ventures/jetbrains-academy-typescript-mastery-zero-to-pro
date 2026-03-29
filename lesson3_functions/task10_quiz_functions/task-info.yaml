@@ -1,0 +1,26 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: TypeScript resolves overloads top-to-bottom and uses the first matching signature
+    is_correct: true
+  - text: Optional parameters can appear before required parameters in a function signature
+    is_correct: false
+  - text: The implementation signature of an overloaded function is directly callable
+      by external code
+    is_correct: false
+  - text: "A rest parameter can appear anywhere in the parameter list, not just at the\
+    \ end"
+    is_correct: false
+  - text: TypeScript cannot infer return types — you must always annotate them explicitly
+    is_correct: false
+message_correct: Correct! TypeScript checks overload signatures from top to bottom
+  and picks the first one that matches the call. That's why more specific overloads
+  should come before more general ones.
+message_incorrect: "Not quite. Remember: overloads resolve top-to-bottom (first match\
+  \ wins). Optional parameters must come after required ones. The implementation signature\
+  \ is hidden from callers. Rest parameters must be last. And TypeScript can infer\
+  \ return types automatically."
+status: Unchecked
+record: -1
+custom_name: "Quiz: Functions"
+local_check: true

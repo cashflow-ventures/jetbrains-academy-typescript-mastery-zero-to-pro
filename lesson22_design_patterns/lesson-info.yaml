@@ -1,0 +1,13 @@
+custom_name: Design Patterns in TypeScript
+content:
+  - task1_builder_pattern
+  - task2_builder_exercise
+  - task3_strategy_pattern
+  - task4_strategy_exercise
+  - task5_observer_pattern
+  - task6_observer_exercise
+  - task7_repository_pattern
+  - task8_repository_exercise
+  - task9_dependency_injection
+  - task10_di_exercise
+  - task11_quiz_patterns

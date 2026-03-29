@@ -1,0 +1,11 @@
+type: edu
+custom_name: Performance Optimization Exercise
+files:
+  - name: task.ts
+    visible: true
+    learner_created: false
+  - name: test/test.ts
+    visible: false
+    learner_created: false
+status: Unchecked
+record: -1

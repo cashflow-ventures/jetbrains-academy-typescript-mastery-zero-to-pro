@@ -1,0 +1,12 @@
+custom_name: Functions
+content:
+  - task1_function_type_annotations
+  - task2_typing_params_returns
+  - task3_optional_default_params
+  - task4_optional_params_exercise
+  - task5_rest_params
+  - task6_rest_params_exercise
+  - task7_function_overloads
+  - task8_overloads_exercise
+  - task9_callback_typing
+  - task10_quiz_functions

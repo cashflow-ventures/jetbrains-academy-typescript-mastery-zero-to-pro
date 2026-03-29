@@ -1,0 +1,11 @@
+custom_name: Declaration Files and Ambient Types
+content:
+  - task1_declaration_files
+  - task2_definitelytyped
+  - task3_writing_declarations
+  - task4_global_declarations
+  - task5_module_augmentation
+  - task6_declaration_merging
+  - task7_declaration_merging_exercise
+  - task8_triple_slash
+  - task9_quiz_declarations

@@ -1,0 +1,14 @@
+custom_name: Classes
+content:
+  - task1_classes_intro
+  - task2_basic_class
+  - task3_access_modifiers
+  - task4_access_modifiers_exercise
+  - task5_inheritance
+  - task6_inheritance_exercise
+  - task7_interfaces_with_classes
+  - task8_implements_exercise
+  - task9_abstract_classes
+  - task10_abstract_exercise
+  - task11_static_members
+  - task12_quiz_classes

@@ -1,0 +1,28 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: A custom type guard function with a `value is Admin` return type
+    is_correct: true
+  - text: '`typeof value === "Admin"` — typeof can check for any type name'
+    is_correct: false
+  - text: '`value instanceof Admin` — instanceof works with all TypeScript types'
+    is_correct: false
+  - text: "A simple truthiness check: `if (value)` narrows to Admin"
+    is_correct: false
+  - text: '`"admin" in value` — the in operator always narrows to the exact interface'
+    is_correct: false
+message_correct: "Correct! Since `Admin` is an interface (not a class), it doesn't\
+  \ exist at runtime. You can't use `typeof` (which only returns primitive type names)\
+  \ or `instanceof` (which requires a constructor). A custom type guard with `value\
+  \ is Admin` lets you write the runtime checks yourself while telling TypeScript\
+  \ the result."
+message_incorrect: "Not quite. `typeof` only returns primitive names like \"string\"\
+  \ or \"number\" — it can't detect interfaces. `instanceof` requires a class constructor,\
+  \ but interfaces are erased at runtime. A truthiness check only eliminates null/undefined/falsy.\
+  \ The `in` operator can help narrow, but doesn't guarantee the full interface shape.\
+  \ A custom type guard function with `value is Admin` is the correct approach for\
+  \ narrowing to an interface type."
+status: Unchecked
+record: -1
+custom_name: "Quiz: Type Guards"
+local_check: true

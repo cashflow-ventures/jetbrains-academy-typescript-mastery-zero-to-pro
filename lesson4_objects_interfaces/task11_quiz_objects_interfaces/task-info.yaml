@@ -1,0 +1,30 @@
+type: choice
+is_multiple_choice: true
+options:
+  - text: Interfaces support declaration merging — defining the same interface name
+      twice merges them into one
+    is_correct: true
+  - text: Type aliases support declaration merging — defining the same type name twice
+      merges them into one
+    is_correct: false
+  - text: "A `readonly` property cannot be reassigned after the object is created, but\
+    \ the property's contents (e.g., array elements) can still be mutated"
+    is_correct: true
+  - text: "A `readonly` property makes the entire value deeply immutable, including\
+    \ nested objects and arrays"
+    is_correct: false
+  - text: Interfaces can represent union types like `string | number`
+    is_correct: false
+  - text: "Type aliases can represent union types, tuples, and primitives that interfaces\
+    \ cannot"
+    is_correct: true
+message_correct: Well done! Interfaces merge declarations and can't express unions.
+  Type aliases handle unions and complex types but don't merge. And `readonly` only
+  prevents reassignment of the property itself — it doesn't deeply freeze the value.
+message_incorrect: "Review the key differences: interfaces support declaration merging\
+  \ (type aliases don't), type aliases can express unions and tuples (interfaces can't),\
+  \ and `readonly` only prevents reassignment — it doesn't make nested values immutable."
+status: Unchecked
+record: -1
+custom_name: "Quiz: Objects and Interfaces"
+local_check: true

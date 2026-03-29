@@ -1,0 +1,33 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: "Branded types add a phantom property via intersection (`T & { readonly __brand:\
+    \ B }`) that makes structurally identical types incompatible at compile time,\
+    \ with zero runtime overhead"
+    is_correct: true
+  - text: "Branded types wrap the value in a class instance at runtime, which is why\
+    \ they prevent mixing different ID types"
+    is_correct: false
+  - text: '`type UserId = string` already prevents passing a `UserId` where an `OrderId`
+    is expected because TypeScript checks type alias names'
+    is_correct: false
+  - text: Opaque types are less safe than branded types because they use `unique symbol`
+      instead of string literal brands
+    is_correct: false
+  - text: Branded types require a special TypeScript compiler flag (`--nominalTypes`)
+      to work correctly
+    is_correct: false
+message_correct: "Exactly! Branded types use an intersection with a phantom property\
+  \ to create structural incompatibility between types that share the same underlying\
+  \ primitive. The brand exists only in the type system — at runtime, the value is\
+  \ still a plain primitive with zero overhead."
+message_incorrect: "Not quite. Branded types do NOT wrap values in objects or require\
+  \ special compiler flags. They use a type-level intersection (`T & { readonly __brand:\
+  \ B }`) that makes types structurally unique at compile time. Plain type aliases\
+  \ like `type UserId = string` provide zero safety — TypeScript ignores alias names\
+  \ for compatibility. Opaque types (using non-exported `unique symbol`) are actually\
+  \ MORE strict than branded types because external code cannot forge the brand."
+status: Unchecked
+record: -1
+custom_name: "Quiz: Branded and Opaque Types"
+local_check: true

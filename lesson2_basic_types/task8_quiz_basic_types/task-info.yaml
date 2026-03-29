@@ -1,0 +1,26 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: '`unknown` is safer than `any` because it requires type narrowing before the
+    value can be used'
+    is_correct: true
+  - text: "A tuple `[string, number]` and an array `(string | number)[]` are the same\
+    \ type"
+    is_correct: false
+  - text: '`any` and `unknown` are identical — both require narrowing before use'
+    is_correct: false
+  - text: '`never` is the return type of functions that return `undefined`'
+    is_correct: false
+  - text: '`bigint` and `number` can be freely mixed in arithmetic expressions'
+    is_correct: false
+message_correct: "Exactly! `unknown` forces you to narrow the type (using typeof,\
+  \ instanceof, etc.) before you can use the value. This makes it the type-safe alternative\
+  \ to `any`."
+message_incorrect: "Not quite. Remember: `unknown` requires narrowing before use (unlike\
+  \ `any` which allows anything). A tuple has fixed length and per-position types\
+  \ (unlike a union array). `never` is for functions that never return at all (not\
+  \ `undefined`). And `bigint` cannot be mixed with `number` in arithmetic."
+status: Unchecked
+record: -1
+custom_name: "Quiz: Basic Types"
+local_check: true

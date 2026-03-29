@@ -1,0 +1,9 @@
+custom_name: Template Literal Types
+content:
+  - task1_template_intro
+  - task2_basic_template_exercise
+  - task3_intrinsic_string_types
+  - task4_string_manipulation_exercise
+  - task5_pattern_matching
+  - task6_pattern_matching_exercise
+  - task7_quiz_template_literals

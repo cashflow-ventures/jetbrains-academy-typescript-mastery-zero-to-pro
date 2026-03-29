@@ -1,0 +1,32 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: "Distributive conditional types evaluate each union member independently —\
+    \ `IsString<string | number>` produces `true | false` (i.e., `boolean`), not `true`\
+    \ or `false` alone"
+    is_correct: true
+  - text: "`infer` can be used anywhere in a type definition, not just inside conditional\
+    \ type `extends` clauses"
+    is_correct: false
+  - text: Passing `never` to a distributive conditional type always returns `true` because
+      `never extends` everything
+    is_correct: false
+  - text: "`[T] extends [U]` and `T extends U` behave identically — the tuple wrapper\
+    \ has no effect"
+    is_correct: false
+  - text: Recursive conditional types cannot reference themselves — TypeScript does
+      not allow self-referencing type aliases
+    is_correct: false
+message_correct: "Exactly! When a union like `string | number` is passed to a distributive\
+  \ conditional type, each member is evaluated separately. `IsString<string>` gives\
+  \ `true` and `IsString<number>` gives `false`, so the combined result is `true |\
+  \ false`, which TypeScript simplifies to `boolean`."
+message_incorrect: "Not quite. `infer` can only appear in the `extends` clause of\
+  \ a conditional type. Passing `never` to a distributive conditional type produces\
+  \ `never` (the empty union distributes to nothing). Wrapping in tuples `[T] extends\
+  \ [U]` prevents distribution, which is critical for handling `never` and unions-as-a-whole.\
+  \ TypeScript does allow recursive type aliases since version 4.1."
+status: Unchecked
+record: -1
+custom_name: "Quiz: Conditional Types"
+local_check: true

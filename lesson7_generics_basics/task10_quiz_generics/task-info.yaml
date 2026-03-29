@@ -1,0 +1,29 @@
+type: choice
+is_multiple_choice: true
+options:
+  - text: Generics preserve type information that `any` would erase
+    is_correct: true
+  - text: TypeScript can infer generic type arguments from function arguments
+    is_correct: true
+  - text: A generic function `<T>` can call `.toUpperCase()` on `T` without constraints
+    is_correct: false
+  - text: "`<T extends { length: number }>` means T must be exactly `{ length: number\
+    \ }`"
+    is_correct: false
+  - text: Generic type parameters with defaults must come after parameters without defaults
+    is_correct: true
+  - text: Generic interfaces can only have one type parameter
+    is_correct: false
+message_correct: "Correct! Generics preserve types (unlike `any`), TypeScript infers\
+  \ type arguments, and default parameters must come last. Constraints define a minimum\
+  \ requirement, not an exact match, and you can't use type-specific methods without\
+  \ constraints."
+message_incorrect: "Review the key concepts: generics preserve type information that\
+  \ `any` erases, TypeScript infers type arguments from function calls, constraints\
+  \ define a minimum (not exact) type requirement, you need constraints to access\
+  \ specific properties, defaults must come after non-default parameters, and interfaces\
+  \ can have multiple type parameters like `Pair<A, B>`."
+status: Unchecked
+record: -1
+custom_name: "Quiz: Generics Basics"
+local_check: true

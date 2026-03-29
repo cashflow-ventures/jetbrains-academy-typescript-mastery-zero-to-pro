@@ -1,0 +1,14 @@
+custom_name: Type-Level Programming
+content:
+  - task1_type_level_thinking
+  - task2_prettify
+  - task3_union_to_intersection
+  - task4_union_to_intersection_exercise
+  - task5_union_to_tuple
+  - task6_union_to_tuple_exercise
+  - task7_type_arithmetic
+  - task8_type_arithmetic_exercise
+  - task9_string_parsing
+  - task10_string_parsing_exercise
+  - task11_type_challenges
+  - task12_quiz_type_level

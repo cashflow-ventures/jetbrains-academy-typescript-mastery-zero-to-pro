@@ -1,0 +1,26 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: TypeScript is a superset of JavaScript that adds static typing and compiles
+      to plain JavaScript
+    is_correct: true
+  - text: TypeScript is a completely separate language that replaces JavaScript in the
+      browser
+    is_correct: false
+  - text: TypeScript is a runtime that executes .ts files directly without compilation
+    is_correct: false
+  - text: TypeScript is a JavaScript library you import with a script tag
+    is_correct: false
+  - text: TypeScript is a server-side-only language that cannot be used in the browser
+    is_correct: false
+message_correct: "Exactly! TypeScript is a superset of JavaScript — every valid JS\
+  \ program is valid TS. It adds static types that are checked at compile time and\
+  \ then erased, producing plain JavaScript that any runtime can execute."
+message_incorrect: "Not quite. TypeScript is a superset of JavaScript, meaning all\
+  \ JavaScript is valid TypeScript. The TypeScript compiler (`tsc`) checks types at\
+  \ compile time and then removes them, outputting plain JavaScript. It doesn't replace\
+  \ JavaScript or run in the browser directly."
+status: Unchecked
+record: -1
+custom_name: "Quiz: TypeScript Fundamentals"
+local_check: true

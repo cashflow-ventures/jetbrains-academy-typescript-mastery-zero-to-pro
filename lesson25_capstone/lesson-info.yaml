@@ -1,0 +1,13 @@
+custom_name: Capstone — Real-World TypeScript Project
+content:
+  - task11_final_quiz
+  - task1_project_architecture
+  - task2_domain_models
+  - task3_validation_layer
+  - task4_api_layer
+  - task5_service_layer
+  - task6_state_management
+  - task7_resource_management
+  - task8_testing_typed_code
+  - task9_testing_exercise
+  - task10_advanced_tsconfig

@@ -1,0 +1,12 @@
+custom_name: Union Types and Literal Types
+content:
+  - task1_union_types
+  - task2_union_exercise
+  - task3_literal_types
+  - task4_literal_exercise
+  - task5_discriminated_unions
+  - task6_discriminated_exercise
+  - task7_as_const
+  - task8_as_const_exercise
+  - task9_satisfies
+  - task10_satisfies_exercise

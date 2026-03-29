@@ -1,0 +1,10 @@
+custom_name: Decorators
+content:
+  - task1_decorators_overview
+  - task2_class_decorators
+  - task3_class_decorators_exercise
+  - task4_method_decorators
+  - task5_method_decorators_exercise
+  - task6_field_decorators
+  - task7_decorator_composition
+  - task8_quiz_decorators

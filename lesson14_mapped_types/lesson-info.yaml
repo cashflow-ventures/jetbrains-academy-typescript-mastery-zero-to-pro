@@ -1,0 +1,9 @@
+custom_name: Mapped Types
+content:
+  - task1_mapped_types_intro
+  - task2_build_your_own_partial
+  - task3_key_remapping
+  - task4_key_remapping_exercise
+  - task5_modifiers
+  - task6_modifier_exercise
+  - task7_quiz_mapped_types

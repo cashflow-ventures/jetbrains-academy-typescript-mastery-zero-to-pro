@@ -1,0 +1,25 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: "It distributes the union into contravariant function parameters, then infers\
+    \ the intersection from the parameter position"
+    is_correct: true
+  - text: It uses `keyof` to extract all keys and combines them with `&`
+    is_correct: false
+  - text: It wraps each union member in a tuple and spreads them together
+    is_correct: false
+  - text: It uses `Exclude` to remove members one by one and accumulate with `&`
+    is_correct: false
+  - text: It converts the union to a string and parses it back as an intersection
+    is_correct: false
+message_correct: "Exactly! UnionToIntersection exploits contravariant inference —\
+  \ function parameters are contravariant, so inferring from a union of functions\
+  \ produces an intersection."
+message_incorrect: "Not quite. The key insight is contravariance: `(U extends unknown\
+  \ ? (x: U) => void : never) extends (x: infer I) => void ? I : never`. Function\
+  \ parameters are contravariant, so inferring from a union of function types yields\
+  \ an intersection."
+status: Unchecked
+record: -1
+custom_name: "Quiz: Type-Level Programming"
+local_check: true

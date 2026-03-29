@@ -1,0 +1,8 @@
+custom_name: Error Handling in TypeScript
+content:
+  - task1_error_patterns
+  - task2_custom_errors
+  - task3_result_pattern
+  - task4_result_exercise
+  - task5_type_safe_errors
+  - task6_quiz_errors

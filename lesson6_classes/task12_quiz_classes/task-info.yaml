@@ -1,0 +1,26 @@
+type: choice
+is_multiple_choice: true
+options:
+  - text: A `private` property can only be accessed inside the class that declares it
+    is_correct: true
+  - text: A `protected` property can be accessed by the declaring class and its subclasses
+    is_correct: true
+  - text: A `private` property can be accessed by subclasses using `super`
+    is_correct: false
+  - text: Abstract classes can be instantiated directly with `new`
+    is_correct: false
+  - text: A class can implement multiple interfaces but can only extend one class
+    is_correct: true
+  - text: Interfaces exist at runtime and can be used with `instanceof`
+    is_correct: false
+message_correct: "Correct! `private` is class-only, `protected` includes subclasses,\
+  \ a class can implement many interfaces but extend only one class, and interfaces\
+  \ are erased at runtime."
+message_incorrect: "Review the differences: `private` is class-only (not even subclasses),\
+  \ `protected` includes subclasses, abstract classes cannot be instantiated, a class\
+  \ extends one class but implements many interfaces, and interfaces don't exist at\
+  \ runtime."
+status: Unchecked
+record: -1
+custom_name: "Quiz: Classes"
+local_check: true

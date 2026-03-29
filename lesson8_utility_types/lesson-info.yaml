@@ -1,0 +1,14 @@
+custom_name: Utility Types
+content:
+  - task1_partial_required_readonly
+  - task2_partial_required_exercise
+  - task3_pick_omit
+  - task4_pick_omit_exercise
+  - task5_record
+  - task6_record_exercise
+  - task7_exclude_extract
+  - task8_union_filtering_exercise
+  - task9_returntype_parameters
+  - task10_function_extraction_exercise
+  - task11_awaited_noinfer
+  - task12_quiz_utility_types

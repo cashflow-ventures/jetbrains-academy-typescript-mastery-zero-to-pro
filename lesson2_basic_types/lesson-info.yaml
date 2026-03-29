@@ -1,0 +1,10 @@
+custom_name: Basic Types
+content:
+  - task1_primitive_types
+  - task2_strings_and_numbers
+  - task3_arrays_and_tuples
+  - task4_array_manipulation
+  - task5_any_unknown_never
+  - task6_taming_unknown
+  - task7_void_undefined
+  - task8_quiz_basic_types

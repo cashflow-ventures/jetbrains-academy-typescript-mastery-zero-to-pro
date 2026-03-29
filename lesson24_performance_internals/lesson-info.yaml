@@ -1,0 +1,13 @@
+custom_name: TypeScript Performance and Compiler Internals
+content:
+  - task1_compiler_pipeline
+  - task2_lsp
+  - task3_complex_types_perf
+  - task4_diagnosing_slow_types
+  - task5_perf_optimization
+  - task6_ts_morph
+  - task7_ts_morph_exercise
+  - task8_project_references
+  - task9_project_references_exercise
+  - task10_monorepo
+  - task11_quiz_performance

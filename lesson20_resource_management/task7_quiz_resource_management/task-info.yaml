@@ -1,0 +1,28 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: "`using` automatically calls `[Symbol.dispose]()` when the variable goes out\
+    \ of scope, even if an error is thrown"
+    is_correct: true
+  - text: '`using` is just syntactic sugar for `try/catch` and does not guarantee cleanup
+    on errors'
+    is_correct: false
+  - text: "The `Disposable` interface requires implementing both `[Symbol.dispose]()`\
+    \ and `[Symbol.asyncDispose]()`"
+    is_correct: false
+  - text: "`using` can only be used with class instances, not plain objects"
+    is_correct: false
+  - text: '`DisposableStack` disposes resources in the same order they were added (FIFO)'
+    is_correct: false
+message_correct: "Exactly! The `using` declaration guarantees that `[Symbol.dispose]()`\
+  \ is called when the variable leaves scope — whether execution completes normally\
+  \ or an error is thrown. This is the core advantage over manual `try/finally` patterns."
+message_incorrect: "Not quite. `using` guarantees cleanup via `[Symbol.dispose]()`\
+  \ when the variable goes out of scope, even during errors — that is its primary\
+  \ advantage. `Disposable` only requires `[Symbol.dispose]()` (not the async variant),\
+  \ `using` works with any object that has `[Symbol.dispose]()` (not just classes),\
+  \ and `DisposableStack` disposes in reverse order (LIFO), not FIFO."
+status: Unchecked
+record: -1
+custom_name: "Quiz: Resource Management"
+local_check: true

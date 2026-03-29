@@ -1,0 +1,28 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: "`K extends keyof T` constrains K to be one of T's property names, and `T[K]`\
+    \ gives the type of that property"
+    is_correct: true
+  - text: '`keyof T` returns an array of T''s property names at runtime'
+    is_correct: false
+  - text: "`T[K]` only works when K is a string, not a number or symbol"
+    is_correct: false
+  - text: Variance annotations (`in`/`out`) are required on all generic interfaces in
+      TypeScript
+    is_correct: false
+  - text: TypeScript always requires explicit type arguments when calling generic functions
+    is_correct: false
+message_correct: "Correct! `K extends keyof T` constrains the key parameter to valid\
+  \ property names, and `T[K]` is an indexed access type that resolves to the type\
+  \ of that specific property. This is the foundation of type-safe property access\
+  \ in TypeScript."
+message_incorrect: "Not quite. `keyof T` is a compile-time type operator (not a runtime\
+  \ function) that produces a union of property name literals. `T[K]` works with string,\
+  \ number, and symbol keys. Variance annotations are optional (TypeScript infers\
+  \ variance), and type argument inference means explicit angles brackets are rarely\
+  \ needed."
+status: Unchecked
+record: -1
+custom_name: "Quiz: Advanced Generics"
+local_check: true

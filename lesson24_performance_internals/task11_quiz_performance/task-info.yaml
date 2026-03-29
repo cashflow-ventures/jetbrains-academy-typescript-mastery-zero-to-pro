@@ -1,0 +1,35 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: "The Checker — it performs full type checking, resolves generics, conditional\
+    \ types, and assignability, accounting for roughly 60-80% of total compilation\
+    \ time"
+    is_correct: true
+  - text: The Parser — building the AST from tokens is the most computationally expensive
+      step
+    is_correct: false
+  - text: The Emitter — generating JavaScript output and stripping types requires the
+      most processing
+    is_correct: false
+  - text: The Scanner — reading source text character by character and producing tokens
+      is the slowest phase
+    is_correct: false
+  - text: The Binder — creating symbols and connecting declarations to scopes is the
+      bottleneck in large projects
+    is_correct: false
+message_correct: "Exactly! The Checker is by far the most expensive phase of the TypeScript\
+  \ compiler pipeline (Scanner → Parser → Binder → Checker → Emitter). It resolves\
+  \ all type annotations, infers types, checks assignability, evaluates conditional\
+  \ and mapped types, and validates generic constraints. When a build is slow, it's\
+  \ almost always the Checker — which is why `--generateTrace` and `--extendedDiagnostics`\
+  \ focus on type instantiation counts and check time."
+message_incorrect: "Not quite. The five compiler phases are Scanner → Parser → Binder\
+  \ → Checker → Emitter. The Checker is the most expensive by a wide margin — it performs\
+  \ all type checking, generic resolution, and assignability validation, typically\
+  \ consuming 60-80% of total compilation time. The other phases (scanning, parsing,\
+  \ binding, emitting) are comparatively fast. Tools like `--extendedDiagnostics`\
+  \ confirm this by showing Check time dominating the output."
+status: Unchecked
+record: -1
+custom_name: "Quiz: Performance and Compiler Internals"
+local_check: true

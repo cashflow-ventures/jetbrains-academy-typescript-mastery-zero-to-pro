@@ -1,0 +1,12 @@
+custom_name: Generics — The Basics
+content:
+  - task1_intro_generics
+  - task2_generic_functions
+  - task3_generic_interfaces
+  - task4_generic_interfaces_exercise
+  - task5_generic_classes
+  - task6_generic_classes_exercise
+  - task7_generic_constraints
+  - task8_constraints_exercise
+  - task9_default_type_params
+  - task10_quiz_generics

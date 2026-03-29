@@ -1,0 +1,13 @@
+custom_name: Objects and Interfaces
+content:
+  - task1_object_type_literals
+  - task2_typing_objects
+  - task3_interfaces
+  - task4_building_interfaces
+  - task5_type_alias_vs_interface
+  - task6_index_signatures
+  - task7_index_signatures_exercise
+  - task8_readonly_optional
+  - task9_intersection_types
+  - task10_intersection_exercise
+  - task11_quiz_objects_interfaces

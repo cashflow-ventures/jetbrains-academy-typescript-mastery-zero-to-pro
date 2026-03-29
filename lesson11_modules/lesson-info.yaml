@@ -1,0 +1,9 @@
+custom_name: Modules and Namespaces
+content:
+  - task1_es_modules
+  - task2_module_exercise
+  - task3_type_only_imports
+  - task4_namespaces
+  - task5_module_resolution
+  - task6_barrel_exports
+  - task7_quiz_modules

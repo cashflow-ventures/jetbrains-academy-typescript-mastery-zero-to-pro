@@ -1,0 +1,27 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: "`{ [K in keyof T]?: T[K] }` makes every property of T optional — this is\
+    \ how `Partial<T>` works"
+    is_correct: true
+  - text: "`{ [K in keyof T]: T[K] }` removes all modifiers from T's properties"
+    is_correct: false
+  - text: The `as never` clause in a mapped type keeps all properties unchanged
+    is_correct: false
+  - text: '`-readonly` adds the readonly modifier to mapped properties'
+    is_correct: false
+  - text: "Mapped types can only iterate over `keyof T`, not arbitrary string literal\
+    \ unions"
+    is_correct: false
+message_correct: Exactly! The `?` modifier after the key bracket makes every property
+  optional. This is the complete implementation of `Partial<T>` — a mapped type that
+  preserves value types while adding optionality to every property.
+message_incorrect: "Not quite. A plain mapped type `{ [K in keyof T]: T[K] }` preserves\
+  \ existing modifiers (it's homomorphic). The `as never` clause removes properties\
+  \ (maps them to nothing). `-readonly` removes readonly (the minus sign means remove).\
+  \ And mapped types can iterate over any union of string/number/symbol literals,\
+  \ not just `keyof T`."
+status: Unchecked
+record: -1
+custom_name: "Quiz: Mapped Types"
+local_check: true

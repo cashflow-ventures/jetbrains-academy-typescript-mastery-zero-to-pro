@@ -1,0 +1,35 @@
+type: choice
+is_multiple_choice: true
+options:
+  - text: Types are erased at runtime — TypeScript's type annotations produce no JavaScript
+      output
+    is_correct: true
+  - text: Branded types prevent structural type equivalence at compile time by adding
+      a phantom property
+    is_correct: true
+  - text: The `satisfies` operator changes the runtime value of an expression
+    is_correct: false
+  - text: Conditional types distribute over union members by default when the checked
+      type is a naked type parameter
+    is_correct: true
+  - text: The `using` keyword requires the value to implement the `Disposable` interface
+      (providing `Symbol.dispose`)
+    is_correct: true
+  - text: '`unknown` allows calling methods directly without narrowing the type first'
+    is_correct: false
+message_correct: "Outstanding! You've demonstrated mastery across the full TypeScript\
+  \ spectrum — from type erasure fundamentals to advanced patterns like branded types,\
+  \ conditional distribution, and explicit resource management. Congratulations on\
+  \ completing the course!"
+message_incorrect: "Review these key concepts: (1) TypeScript erases all types at\
+  \ compile time — no type info exists at runtime (Lesson 1). (2) Branded types add\
+  \ a phantom property to break structural equivalence (Lesson 17). (3) `satisfies`\
+  \ is purely a compile-time check — it never affects runtime values (Lesson 5). (4)\
+  \ Conditional types distribute over unions when the checked type is a bare type\
+  \ parameter (Lesson 15). (5) `using` requires `Disposable` with `Symbol.dispose`\
+  \ (Lesson 20). (6) `unknown` is the type-safe counterpart to `any` — you must narrow\
+  \ it before calling any methods (Lesson 2)."
+status: Unchecked
+record: -1
+custom_name: "Final Quiz: TypeScript Mastery"
+local_check: true

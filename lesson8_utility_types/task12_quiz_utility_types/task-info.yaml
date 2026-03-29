@@ -1,0 +1,26 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: "`Partial<User>` — it makes all properties optional, perfect for update payloads"
+    is_correct: true
+  - text: "`Pick<User, 'name' | 'email'>` — it selects only the fields you want to update"
+    is_correct: false
+  - text: '`Readonly<User>` — it prevents accidental mutation of the update object'
+    is_correct: false
+  - text: "`Record<string, unknown>` — it allows any key-value pairs for flexible updates"
+    is_correct: false
+  - text: '`Required<User>` — it ensures all fields are provided in the update'
+    is_correct: false
+message_correct: "Correct! `Partial<User>` makes every property optional, which is\
+  \ exactly what you need for an update function where the caller may only want to\
+  \ change some fields."
+message_incorrect: "Not quite. When building an update function, you want the caller\
+  \ to provide *any subset* of properties. `Partial<T>` makes all properties optional,\
+  \ which is the standard pattern for update/patch payloads. `Pick` would limit which\
+  \ fields can be updated, `Readonly` prevents mutation but doesn't help with optional\
+  \ fields, `Record<string, unknown>` loses type safety, and `Required` demands all\
+  \ fields."
+status: Unchecked
+record: -1
+custom_name: "Quiz: Utility Types"
+local_check: true

@@ -1,0 +1,10 @@
+custom_name: Async TypeScript
+content:
+  - task1_promises_types
+  - task2_async_await
+  - task3_typing_fetch
+  - task4_concurrent_patterns
+  - task5_concurrent_exercise
+  - task6_async_generators
+  - task7_async_generators_exercise
+  - task8_quiz_async

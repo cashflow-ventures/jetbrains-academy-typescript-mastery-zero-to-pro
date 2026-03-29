@@ -1,0 +1,29 @@
+type: choice
+is_multiple_choice: true
+options:
+  - text: Interfaces with the same name automatically merge their members into a single
+      definition
+    is_correct: true
+  - text: The `declare` keyword creates an ambient declaration — it describes a type
+      without providing runtime code
+    is_correct: true
+  - text: Type aliases (using `type`) support declaration merging just like interfaces
+    is_correct: false
+  - text: A `.d.ts` file can contain function implementations as long as they are exported
+    is_correct: false
+  - text: A namespace can merge with a class to add static-like members and nested types
+    is_correct: true
+  - text: Triple-slash directives can appear anywhere in a file and still take effect
+    is_correct: false
+message_correct: "Well done! Interfaces merge automatically, `declare` creates ambient\
+  \ declarations without runtime code, and namespaces can merge with classes. Type\
+  \ aliases don't merge, `.d.ts` files contain no implementations, and triple-slash\
+  \ directives must appear at the very top of a file."
+message_incorrect: "Review the key differences: interfaces merge but type aliases\
+  \ don't. The `declare` keyword only describes types — no runtime code. `.d.ts` files\
+  \ never contain implementations. Namespaces can merge with classes, functions, and\
+  \ enums. Triple-slash directives must be at the top of the file before any code."
+status: Unchecked
+record: -1
+custom_name: "Quiz: Declaration Files"
+local_check: true

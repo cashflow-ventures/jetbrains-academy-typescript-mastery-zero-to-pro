@@ -1,0 +1,26 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: "Numeric enums support reverse mapping (value → name), but string enums do\
+    \ not"
+    is_correct: true
+  - text: Both numeric and string enums support reverse mapping
+    is_correct: false
+  - text: "String enums support reverse mapping, but numeric enums do not"
+    is_correct: false
+  - text: Neither numeric nor string enums support reverse mapping
+    is_correct: false
+  - text: '`const enum` members are available at runtime via reverse mapping'
+    is_correct: false
+message_correct: "Correct! TypeScript generates a reverse mapping object only for\
+  \ numeric enums. Given `enum Dir { Up = 0 }`, you can write `Dir[0]` to get `\"\
+  Up\"`. String enums do not get this reverse mapping, and `const enum` members are\
+  \ inlined at compile time — they don't exist at runtime at all."
+message_incorrect: "Not quite. Only numeric enums get reverse mapping — TypeScript\
+  \ emits an object that maps both name → value and value → name. String enums only\
+  \ map name → value. And `const enum` is erased entirely at compile time, so no runtime\
+  \ object exists."
+status: Unchecked
+record: -1
+custom_name: "Quiz: Enums"
+local_check: true

@@ -1,0 +1,11 @@
+custom_name: Conditional Types
+content:
+  - task1_conditional_intro
+  - task2_basic_conditional_exercise
+  - task3_distributive
+  - task4_distributive_exercise
+  - task5_infer_keyword
+  - task6_infer_exercise
+  - task7_recursive_conditional
+  - task8_recursive_exercise
+  - task9_quiz_conditional

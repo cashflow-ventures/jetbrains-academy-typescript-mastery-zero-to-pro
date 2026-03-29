@@ -1,0 +1,31 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: '`Awaited<Promise<Promise<string>>>` resolves to `string` because `Awaited`
+    recursively unwraps nested promise types'
+    is_correct: true
+  - text: '`Awaited<Promise<Promise<string>>>` resolves to `Promise<string>` because
+    `Awaited` only unwraps one level'
+    is_correct: false
+  - text: "`Promise.all` returns `Promise<(number | string)[]>` when given a tuple of\
+    \ `Promise<number>` and `Promise<string>`"
+    is_correct: false
+  - text: "`Promise.allSettled` returns `Promise<T[]>` with the resolved values, discarding\
+    \ any rejections"
+    is_correct: false
+  - text: An `async function` can return `void` directly — TypeScript does not wrap
+      it in `Promise<void>`
+    is_correct: false
+message_correct: "Exactly! `Awaited<T>` recursively unwraps all layers of `Promise`\
+  \ and `PromiseLike`, so `Awaited<Promise<Promise<string>>>` resolves all the way\
+  \ down to `string`. This matches the behavior of the `await` keyword."
+message_incorrect: "Not quite. `Awaited<T>` recursively unwraps ALL layers of promises\
+  \ — `Awaited<Promise<Promise<string>>>` is `string`, not `Promise<string>`. Also,\
+  \ `Promise.all` preserves tuple types (not union arrays), `Promise.allSettled` returns\
+  \ `PromiseSettledResult<T>[]` (not plain `T[]`), and `async` functions always return\
+  \ `Promise<T>` — even `async function f(): Promise<void>` wraps the return in a\
+  \ Promise."
+status: Unchecked
+record: -1
+custom_name: "Quiz: Async TypeScript"
+local_check: true

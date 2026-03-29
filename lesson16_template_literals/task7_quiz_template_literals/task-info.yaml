@@ -1,0 +1,31 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: "Template literal types distribute over unions — `${\"a\" | \"b\"}_${\"x\"\
+    \ | \"y\"}` produces `\"a_x\" | \"a_y\" | \"b_x\" | \"b_y\"` (the Cartesian product)"
+    is_correct: true
+  - text: "`Capitalize<T>` converts every character in the string to uppercase, just\
+    \ like `Uppercase<T>`"
+    is_correct: false
+  - text: "Template literal types can parse and validate strings at runtime, not just\
+    \ at compile time"
+    is_correct: false
+  - text: "`Uppercase`, `Lowercase`, `Capitalize`, and `Uncapitalize` can be reimplemented\
+    \ as user-defined type aliases"
+    is_correct: false
+  - text: "Template literal pattern matching with `infer` works on the broad `string`\
+    \ type, not just string literals"
+    is_correct: false
+message_correct: "Exactly! When a template literal type contains union-typed placeholders,\
+  \ TypeScript computes the Cartesian product of all union members. Two unions of\
+  \ 2 members each produce 2 × 2 = 4 resulting string literal types."
+message_incorrect: "Not quite. `Capitalize` only uppercases the first character (not\
+  \ all characters — that's `Uppercase`). Template literal types are purely compile-time\
+  \ constructs with no runtime effect. The four intrinsic string types (`Uppercase`,\
+  \ `Lowercase`, `Capitalize`, `Uncapitalize`) are compiler built-ins that cannot\
+  \ be reimplemented in userland. Pattern matching with `infer` only works on specific\
+  \ string literal types, not the broad `string` type."
+status: Unchecked
+record: -1
+custom_name: "Quiz: Template Literal Types"
+local_check: true

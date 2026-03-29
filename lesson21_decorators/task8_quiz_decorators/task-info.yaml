@@ -1,0 +1,28 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: "Decorators apply bottom-to-top: the decorator closest to the declaration\
+    \ executes first, and the outermost decorator wraps the result"
+    is_correct: true
+  - text: "Decorators apply top-to-bottom: the first decorator listed executes first\
+    \ and passes its result down"
+    is_correct: false
+  - text: "TC39 Stage 3 decorators require `experimentalDecorators: true` in tsconfig.json"
+    is_correct: false
+  - text: "Legacy method decorators receive `(value, context)` as arguments"
+    is_correct: false
+  - text: Property decorators receive a `PropertyDescriptor` as their third argument
+    is_correct: false
+message_correct: "Correct! When multiple decorators are stacked, they apply bottom-to-top\
+  \ (inner-first). The decorator closest to the class/method is applied first, and\
+  \ each outer decorator wraps the previous result. Decorator factory expressions\
+  \ evaluate top-to-bottom, but the actual decorator functions apply bottom-to-top."
+message_incorrect: "Not quite. Stacked decorators apply bottom-to-top — the one closest\
+  \ to the declaration runs first. TC39 Stage 3 decorators do NOT require `experimentalDecorators`\
+  \ (that flag is for legacy decorators only). Legacy method decorators receive `(target,\
+  \ propertyKey, descriptor)`, not `(value, context)`. Property decorators only receive\
+  \ `(target, propertyKey)` — no descriptor."
+status: Unchecked
+record: -1
+custom_name: "Quiz: Decorators"
+local_check: true

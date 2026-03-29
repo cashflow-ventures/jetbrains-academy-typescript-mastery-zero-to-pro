@@ -1,0 +1,28 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: "`import type { User }` is completely erased from the JavaScript output —\
+    \ no runtime import occurs"
+    is_correct: true
+  - text: "`import type { User }` imports the value at runtime but restricts it to type\
+    \ positions in TypeScript"
+    is_correct: false
+  - text: '`import type` and `import` produce identical JavaScript output'
+    is_correct: false
+  - text: "`import type` is only valid for interfaces, not for type aliases or classes"
+    is_correct: false
+  - text: Namespaces are the recommended way to organize code in modern TypeScript projects
+    is_correct: false
+message_correct: "Correct! `import type` tells the compiler that the import is used\
+  \ only as a type annotation. The entire import statement is removed from the compiled\
+  \ JavaScript — no module is loaded at runtime. This helps with tree-shaking, avoids\
+  \ side effects, and breaks circular dependency chains."
+message_incorrect: "Not quite. `import type` is a compile-time-only construct — it\
+  \ is completely erased from the JavaScript output. No runtime import occurs. It\
+  \ works with interfaces, type aliases, classes (when used only as types), and any\
+  \ other TypeScript type. And while namespaces still have niche uses, ES modules\
+  \ are the recommended approach for modern TypeScript."
+status: Unchecked
+record: -1
+custom_name: "Quiz: Modules"
+local_check: true

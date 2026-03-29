@@ -1,0 +1,32 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: "The `catch` variable is typed as `unknown` in strict mode because JavaScript\
+    \ allows throwing any value, and the Result pattern encodes errors in the return\
+    \ type so the compiler enforces handling"
+    is_correct: true
+  - text: The `catch` variable is always typed as `Error` because only `Error` instances
+      can be thrown in TypeScript
+    is_correct: false
+  - text: The Result pattern is slower than exceptions because it creates extra objects
+      on every function call
+    is_correct: false
+  - text: "TypeScript supports `throws` clauses in function signatures, making the Result\
+    \ pattern unnecessary"
+    is_correct: false
+  - text: "Using `catch (error: any)` is the recommended approach because it gives you\
+    \ full access to error properties without narrowing"
+    is_correct: false
+message_correct: "Exactly! In JavaScript, anything can be thrown — strings, numbers,\
+  \ objects, undefined — so `unknown` is the only honest type for a catch variable.\
+  \ The Result pattern solves the visibility problem by making errors part of the\
+  \ return type, which the compiler can check and enforce."
+message_incorrect: "Not quite. TypeScript does NOT have `throws` clauses, and `catch\
+  \ (error: any)` disables type safety. The `catch` variable is `unknown` (not `Error`)\
+  \ because JavaScript allows throwing any value. The Result pattern encodes errors\
+  \ in the return type as a discriminated union, making error handling explicit and\
+  \ compiler-enforced."
+status: Unchecked
+record: -1
+custom_name: "Quiz: Error Handling"
+local_check: true

@@ -1,0 +1,41 @@
+type: marketplace
+title: TypeScript Mastery - From Zero to Pro
+language: English
+summary: |-
+  A comprehensive TypeScript course from absolute beginner to advanced pro.
+  Covers types, generics, utility types, decorators, type-level programming,
+  compiler internals, and real-world patterns.
+programming_language: JavaScript
+content:
+  - lesson1_ts_fundamentals
+  - lesson2_basic_types
+  - lesson3_functions
+  - lesson4_objects_interfaces
+  - lesson5_unions_literals
+  - lesson6_classes
+  - lesson7_generics_basics
+  - lesson8_utility_types
+  - lesson9_type_guards
+  - lesson10_enums
+  - lesson11_modules
+  - lesson12_declaration_files
+  - lesson13_advanced_generics
+  - lesson14_mapped_types
+  - lesson15_conditional_types
+  - lesson16_template_literals
+  - lesson17_branded_types
+  - lesson18_error_handling
+  - lesson19_async
+  - lesson20_resource_management
+  - lesson21_decorators
+  - lesson22_design_patterns
+  - lesson23_type_level
+  - lesson24_performance_internals
+  - lesson25_capstone
+additional_files:
+  - name: package.json
+  - name: package-lock.json
+  - name: tsconfig.json
+  - name: jest.config.js
+mode: Study
+yaml_version: 5

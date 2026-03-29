@@ -1,0 +1,12 @@
+custom_name: Advanced Generics
+content:
+  - task1_multiple_type_params
+  - task2_multi_param_exercise
+  - task3_keyof_indexed_access
+  - task4_keyof_exercise
+  - task5_inference_patterns
+  - task6_inference_exercise
+  - task7_variance
+  - task8_variance_exercise
+  - task9_generic_utilities
+  - task10_quiz_advanced_generics

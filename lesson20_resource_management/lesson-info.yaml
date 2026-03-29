@@ -1,0 +1,9 @@
+custom_name: Explicit Resource Management
+content:
+  - task1_resource_problem
+  - task2_disposable
+  - task3_using_keyword
+  - task4_using_exercise
+  - task5_disposable_stack
+  - task6_disposable_stack_exercise
+  - task7_quiz_resource_management

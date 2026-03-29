@@ -1,0 +1,9 @@
+custom_name: Branded and Opaque Types
+content:
+  - task1_structural_typing_problem
+  - task2_branded_pattern
+  - task3_branded_exercise
+  - task4_opaque_types
+  - task5_opaque_exercise
+  - task6_branded_practice
+  - task7_quiz_branded

@@ -1,0 +1,10 @@
+custom_name: Enums and Literal Types Deep Dive
+content:
+  - task1_numeric_enums
+  - task2_numeric_enums_exercise
+  - task3_string_enums
+  - task4_string_enums_exercise
+  - task5_const_enums
+  - task6_enums_vs_unions
+  - task7_enums_vs_unions_exercise
+  - task8_quiz_enums

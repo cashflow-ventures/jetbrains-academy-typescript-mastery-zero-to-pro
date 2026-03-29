@@ -1,0 +1,29 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: Strategy — define a family of interchangeable algorithms behind a common interface
+      and swap them at runtime
+    is_correct: true
+  - text: Builder — define a family of interchangeable algorithms behind a common interface
+      and swap them at runtime
+    is_correct: false
+  - text: Observer — define a family of interchangeable algorithms behind a common interface
+      and swap them at runtime
+    is_correct: false
+  - text: Repository — define a family of interchangeable algorithms behind a common
+      interface and swap them at runtime
+    is_correct: false
+  - text: Dependency Injection — define a family of interchangeable algorithms behind
+      a common interface and swap them at runtime
+    is_correct: false
+message_correct: "Correct! The Strategy pattern encapsulates interchangeable algorithms\
+  \ behind a shared interface. The context class delegates to whichever strategy is\
+  \ currently set, allowing runtime swapping without modifying the context."
+message_incorrect: "Not quite. The pattern that encapsulates interchangeable algorithms\
+  \ behind a common interface is the Strategy pattern. Builder constructs complex\
+  \ objects step by step, Observer handles event notification, Repository abstracts\
+  \ data access, and DI manages how dependencies are provided to classes."
+status: Unchecked
+record: -1
+custom_name: "Quiz: Design Patterns"
+local_check: true

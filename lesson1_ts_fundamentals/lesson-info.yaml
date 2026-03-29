@@ -1,0 +1,8 @@
+custom_name: TypeScript Fundamentals
+content:
+  - task1_what_is_typescript
+  - task2_why_typescript
+  - task3_first_typed_variable
+  - task4_type_inference
+  - task5_tsconfig
+  - task6_quiz_fundamentals

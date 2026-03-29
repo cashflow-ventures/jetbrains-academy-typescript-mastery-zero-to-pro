@@ -1,0 +1,13 @@
+custom_name: Type Guards and Narrowing
+content:
+  - task1_narrowing_overview
+  - task2_typeof_guards
+  - task3_instanceof_guards
+  - task4_instanceof_exercise
+  - task5_in_operator
+  - task6_custom_type_guards
+  - task7_custom_guards_exercise
+  - task8_assertion_functions
+  - task9_assertion_exercise
+  - task10_exhaustive_never
+  - task11_quiz_type_guards
